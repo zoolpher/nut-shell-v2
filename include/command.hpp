@@ -14,6 +14,9 @@ struct Command {
     string output   =  "";
     string input    = "";
 
-    bool append = false;
-    bool bgFlag = true;
+    bool append     = false;
+    bool overWrite  = false;
+    bool bgFlag     = false;
 };
+
+
