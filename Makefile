@@ -11,7 +11,7 @@ TEST_TARGET_2 = test_executor
 TEST_SRC_2 = test/test_executor.cpp src/executor.cpp src/parser.cpp src/helper/handleBuiltins.cpp
 
 $(TARGET): $(SRC)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC) -lreadline
 
 $(TEST_TARGET_1): $(TEST_SRC_1)
 	$(CXX) $(CXXFLAGS) -o $(TEST_TARGET_1) $(TEST_SRC_1)
