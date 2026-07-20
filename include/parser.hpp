@@ -4,4 +4,6 @@
 
 #include "command.hpp"
 
-Command parseInput(const string &input);
+#include <vector>
+
+vector<Command> parseInput(const string &input);
