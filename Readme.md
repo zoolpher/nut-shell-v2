@@ -62,6 +62,24 @@ ping google.com && echo "connected"
 
 Type `exit` to quit.
 
+## Running tests
+
+Two separate test drivers are included for isolated testing of the parser and executor, independent of the main shell.
+
+**Parser tests** — verifies command parsing (redirection, pipes, flags) without executing anything:
+```bash
+make test_parser
+./test_parser
+```
+
+**Executor tests** — runs full command execution (fork/exec, pipes, redirection, builtins) through a REPL loop, same as `nut-shell` itself:
+```bash
+make test_executor
+./test_executor
+```
+
+Both binaries are excluded from the main `nut-shell` build and only compiled when explicitly requested via `make test_parser` or `make test_executor`.
+
 ## Project structure
 
 ```
