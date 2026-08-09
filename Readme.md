@@ -6,8 +6,6 @@
 
 A Unix shell built from scratch in C++, implementing core shell mechanics: process execution, I/O redirection, pipes, conditional chaining, background jobs, and builtins.
 
-Built by ([@zoolpher](https://github.com/zoolpher))
-
 ## Features
 
 - Command execution via `fork()`/`execvp()`
@@ -88,3 +86,15 @@ src/helper/     - builtin command handling
 include/        - header files
 test/           - test drivers for parser and executor
 ```
+
+## Author
+
+— [@zoolpher](https://github.com/zoolpher)
+
+- B.Tech Computer Science (final year)
+- Focus: Systems programming · Operating systems · Process management
+- Built nut-shell-v2 (extension of [nut-shell](https://github.com/zoolpher/nut-shell)) as a hands-on exploration of shell internals, process creation, pipes, command parsing, and Unix system calls in C++.
+
+### License
+
+This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details. You are free to fork, modify, and use this project for your own learning and development!
